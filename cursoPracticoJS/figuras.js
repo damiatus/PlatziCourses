@@ -32,7 +32,10 @@ console.log("Los lados del tirangulo miden: " + ladoTriangulo1 + "cm, " + ladoTr
 const alturaTriangulo = 5.5;
 console.log("La altura mide: " + alturaTriangulo + "cm"); */
 
-
+function alturaTriangulo(value2, value3){
+    return ((value2**2)-((value3*0.5)**2))**0.5
+//        return ((((value2)**2) - ((value3*0.5)**2))**(0.5))
+};
 function perimetroTriangulo(lado1, lado2, lado3) {
     return lado1 + lado2 + lado3
 };
@@ -124,6 +127,30 @@ function calcularÁreaCuadrado(){
 
 
 //------------Triangulo
+function calcularAlturaTriangulo(){
+    const input1 = document.getElementById("InputTriangulo1");
+    const value1 = input1.value;
+
+    const input2 = document.getElementById("InputTriangulo2");
+    const value2 = input2.value;
+
+    const input3 = document.getElementById("InputTriangulo3");
+    const value3 = input3.value;
+
+    const altura = alturaTriangulo(value2, value3);
+    if (value1 == value2){
+            alert(altura);
+    }
+    else {
+        alert("Ingrese las medidas de un triangulo sisoseles")
+    
+    }
+
+}
+
+
+
+
 function calcularPerimetroTriangulo(){
     const input1 = document.getElementById("InputTriangulo1");
     const value1 = input1.value;
