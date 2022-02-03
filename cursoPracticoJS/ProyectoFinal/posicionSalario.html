@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiciones de salarios LATAM</title>
+</head>
+
+<body>
+    <header>
+        <h1>¿En que posición se encuentra tu salario?</h1>
+    </header>
+    <p>En esta página podrás saber en que posición te encuentras economicamente en comparación con tu país y con el resto de la región</p>
+
+    <section>
+        <h2>Calculemos tu posición</h2>
+
+        <form>
+            <label for="InputSalary">Escribe tu salario anual? (EN USD)</label>
+            <input type="number" id="InputSalary">
+
+            <label for="InputCountry">Selecciona tu país:</label>
+            <!-- ACÁ HAY QUE PONER UNA LISTA DESPLEGABLE <input type="number" id="InputDiscount"> -->
+
+            <button type="button" onclick="calcularPos()">
+                Calcular la posición según mi salario
+            </button>
+
+            <p id="resultPos">
+
+            </p>
+        </form>
+    </section>
+
+
+
+    <script src="./posicionSalario.js"></script>
+</body>
+
+</html>
