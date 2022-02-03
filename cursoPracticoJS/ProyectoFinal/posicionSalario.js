@@ -19,17 +19,37 @@ const inputPais = document.getElementById("InputCountry");
 
 
 function calcularPos(){
+
 var i=0;
+    if (inputSalary.value < salariosChileSorted[0]){
+    var porcentaje = 100;
+    resultPos.innerText = "Tu salario en Chile está en el top " + porcentaje + "%";
 
-    while (inputSalary.value > salariosChileSorted[i]){
-        var i=i+1;
+    }else{
+
+    while (salariosChileSorted[i] < inputSalary.value){
+        var i = i+1;
+        var p= i+1;
+        console.log("Este es p en =="+ p);
     }
+    var p= i;
+    console.log("Este es P "+p);
 
-    var porcentaje = 100- ((i*100)/salariosChileSorted.length);
+    while (inputSalary.value == salariosChileSorted[i]){
+        var i = i+1;
+
+    }
+    var q= i;
+    console.log("Este es q "+ q);
+
+    var porcentaje = 100 - ((((q+p)/2)*100)/(salariosChileSorted.length));
+    
 
     resultPos.innerText = "Tu salario en Chile está en el top " + porcentaje + "%";
+
+
+
+    }
+
 };
 
-
-//Añadir el sueldo al array de salarios y con search ver en que posicion está dicho sueldo para luego comparar ese indice con el length del array completo.
-//Ir comparando tu posicion con la de los demas, si es mayor suma uno, si no devuelve el numero, dicho numero es el indice de donde irira su salario. Luego se saca a que porcentaje equivale dicho número ocn respecto a chile.length.

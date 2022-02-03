@@ -9,6 +9,8 @@
 
 ## Funciones futuras:
 
-# Opción para seleccionar salario anual o mensual (al principio solo anual)
+### Opción para seleccionar salario anual o mensual (al principio solo anual)
 
-# Opción para seleccionar moneda (al principio solo USD)
+### Opción para seleccionar moneda (al principio solo USD)
+
+### Arreglar error de cuando muchos tienen el mismo sueldo
