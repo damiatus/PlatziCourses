@@ -22,6 +22,14 @@
             <input type="number" id="InputSalary">
 
             <label for="InputCountry">Selecciona tu país:</label>
+            <select id="InputCountry" name="Country">
+                <option selected value="0" id="InputCountry" > Elige una opción </option>
+                <optgroup label="Latinoamerica">
+                    <option value="1">Chile </option>
+                    <option value="2">Perú</option>
+                    <option value="3">Brasil</option>
+                </optgroup>
+            </select>
             <!-- ACÁ HAY QUE PONER UNA LISTA DESPLEGABLE <input type="number" id="InputDiscount"> -->
 
             <button type="button" onclick="calcularPos()">
@@ -35,8 +43,9 @@
     </section>
 
 
-
+    <script src="./datosPaises.js"></script>
     <script src="./posicionSalario.js"></script>
+    
 </body>
 
 </html>
