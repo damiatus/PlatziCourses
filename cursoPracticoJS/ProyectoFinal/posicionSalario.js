@@ -1,9 +1,78 @@
-let salariosChile = [];
+//--------------------------------//
+
+//Esto no está funcionando, probar con metodo constructor
+//--------------------------------//
+let paises = {
+    Chile: chile,
+    //Peru: peru,
+    //Brasil: brasil,
+};
+
+function salariosPaises(pais){
+    this.salarios = pais;
+
+};
+
+let salariosPaisesSorted = {
+    Chile: [],
+    Peru: [],
+    Brasi: [],
+};
+
+// paises.Chile == chile
+// salariosChile == salariosPaises.Chile
+function obtenerDatos(pais){
+    let salariosPais = [];
+    pais.forEach(function(persona){
+        salariosPais.push(persona.salary);
+    });
+    console.log(salariosPais);
+
+    var salario = new salariosPaises(salariosPais);
+    console.log(salario);
+
+
+    const salariosSorted = salariosPais.sort(
+        function(salaryA, salaryB){
+             return salaryA - salaryB;
+        });
+    
+    console.log(salariosSorted);
+
+
+
+  /*   var datosOrigen = salariosOrigen.pais;
+
+    datosOrigen.forEach(function(persona){
+        datosOrigen.push(persona.salary);
+        });
+
+    salariosFinales.pais = datosOrigen.sort(
+        function(salaryA, salaryB){
+            return salaryA - salaryB;
+        });
+ */
+
+}
+//--------------------------------//
+//Helpers (solo funcioan con un tipo de base de datos)
+
+
+
+
+//########################################################//
+// chile.forEach -> salariosChile -> salariosChileSorted
+
+/* let salariosChile = [];
 
 //Helpers
+
+// Extrae cada salario de la base de datos
 chile.forEach(function(persona){
     salariosChile.push(persona.salary);
     });
+
+//Odena los datos obtenidos previamente
 
 const salariosChileSorted = salariosChile.sort(
     function(salaryA, salaryB){
@@ -53,3 +122,4 @@ var i=0;
 
 };
 
+ */
