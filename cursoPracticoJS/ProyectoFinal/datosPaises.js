@@ -165,3 +165,87 @@ peru.push({
   name: "Bill Gates",
   salary: 99999,
 });
+
+//###########################################//
+const brasil = [];
+
+brasil.push({
+  name: "Camila",
+  salary: 350,
+});
+brasil.push({
+  name: "Nath",
+  salary: 1500,
+});
+brasil.push({
+  name: "Luisa",
+  salary: 1800,
+});
+brasil.push({
+  name: "Laura",
+  salary: 1000,
+});
+brasil.push({
+  name: "Daniela",
+  salary: 2200,
+});
+brasil.push({
+  name: "Esperancita",
+  salary: 50,
+});
+brasil.push({
+  name: "Carla",
+  salary: 500,
+});
+brasil.push({
+  name: "Antonieta",
+  salary: 1500,
+});
+brasil.push({
+  name: "Alicia",
+  salary: 1300,
+});
+brasil.push({
+  name: "Ana",
+  salary: 2400,
+});
+brasil.push({
+  name: "Julia",
+  salary: 3400,
+});
+brasil.push({
+  name: "Rosa",
+  salary: 400,
+});
+brasil.push({
+  name: "Angélica",
+  salary: 400,
+});
+brasil.push({
+  name: "Tatiana",
+  salary: 400,
+});
+brasil.push({
+  name: "Lorena",
+  salary: 600,
+});
+brasil.push({
+  name: "Carolina",
+  salary: 1600,
+});
+brasil.push({
+  name: "Fernanda",
+  salary: 2600,
+});
+brasil.push({
+  name: "Nora",
+  salary: 1000,
+});
+brasil.push({
+  name: "Gisselle",
+  salary: 2000,
+});
+brasil.push({
+  name: "Bill Gates",
+  salary: 99999,
+});
