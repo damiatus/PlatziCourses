@@ -1,0 +1,148 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 200px;
+    text-align: center;
+/*     border: 1px solid ;
+    border-radius: 8px;
+    border-color: blueviolet; */
+
+}
+
+.header--title-container{
+    width: 70%;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1{
+    font-size: 3.0rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+main {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+}
+.main--title-container{
+    width: 70%;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center;
+
+}
+
+.main--title-container h2{
+
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.main--title-container p{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.main--form-container{
+
+    text-align: center;
+    align-self: center;
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 210px;
+    margin: 35px auto;
+    background-color: #282623;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 16%);
+    color: #ffffffff;
+}
+
+.main--form-inputSalary{
+    width: 100%;
+    margin-top: 35px;
+    font-size: 1.6rem;
+}
+.main--form-inputSalary input{
+    border-radius: 20px;
+    border-style: none;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.main--form-inputCountry{
+    width: 100%;
+    margin-top: 35px;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main--form-inputCountry select{
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border-style: none;
+    width: 180px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.main--button-container{
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 100%;
+    font-size: 1.6rem;
+}
+
+.main--button-container button{
+    width: 300px;
+    height: 48px;
+    background-color: orange;
+    box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #282623;
+
+
+}
+
+

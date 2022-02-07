@@ -5,41 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+
     <title>Posiciones de salarios LATAM</title>
 </head>
 
 <body>
     <header>
-        <h1>¿En que posición se encuentra tu salario?</h1>
+        <div class = header--title-container>
+            <h1>¿En que posición se encuentra tu salario?</h1>
+
+            <p>En esta página podrás saber en que posición te encuentras economicamente en comparación con tu país y con el resto de
+                la región</p>
+        </div>
+       
     </header>
-    <p>En esta página podrás saber en que posición te encuentras economicamente en comparación con tu país y con el resto de la región</p>
+    <main>
+        <div class = main--title-container>
+            <h2>Calculemos tu posición</h2>
+            <p>Para esto, por favor ingreas tu sueldo anueal en USD y tu país</p>
+        </div>
 
-    <section>
-        <h2>Calculemos tu posición</h2>
+        <div class = main--form-container>
+            <form>
+                <div class=main--form-inputSalary>
+                    <label for="InputSalary" >Escribe tu salario anual en $USD:</label>
+                    <input type="number" id="InputSalary">
+                </div>
 
-        <form>
-            <label for="InputSalary">Escribe tu salario anual? (EN USD)</label>
-            <input type="number" id="InputSalary">
+                <div class= main--form-inputCountry>
+                    <label for="InputCountry">Selecciona tu país: </label>
 
-            <label for="InputCountry">Selecciona tu país:</label>
-            <select id="InputCountry" name="Country">
-                <option selected value="0" id="InputCountry1" > Elige una opción </option>
-                <optgroup label="Latinoamerica">
-                    <option value="Chile">Chile </option>
-                    <option value="Peru">Perú</option>
-                    <option value="Brasil">Brasil</option>
-                </optgroup>
-            </select>
+                    <select id="InputCountry" name="Country">
+                        <option selected value="0" id="InputCountry1"> Elige una opción </option>
+                        <optgroup label="Latinoamerica">
+                            <option value="Chile">Chile </option>
+                            <option value="Peru">Perú</option>
+                            <option value="Brasil">Brasil</option>
+                        </optgroup>
+                    </select>
+                </div class = main--form-inputCountry>
+                
+            
 
+            </form>
+        </div>
+        <div class= main--button-container>
             <button type="button" onclick="calcularPos()">
                 Calcular la posición según mi salario
             </button>
-
+                
             <p id="resultPos">
-
+                
             </p>
-        </form>
-    </section>
+        </div>
+
+    </main>
 
 
     <script src="./datosPaises.js"></script>
