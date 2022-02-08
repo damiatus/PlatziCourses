@@ -14,3 +14,5 @@
 ### Opción para seleccionar moneda (al principio solo USD)
 
 ### Arreglar error de cuando muchos tienen el mismo sueldo
+
+![image](https://user-images.githubusercontent.com/77755019/153081831-6e369757-7454-4694-955e-449f35f4ff20.png)
