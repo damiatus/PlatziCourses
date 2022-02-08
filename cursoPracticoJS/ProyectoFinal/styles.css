@@ -8,7 +8,7 @@
     --colorTituloHeader: #252422;
     --colorSubtituloHeader: #252422;
 
-    --colorMain: #252422;
+    /* --colorMain:; */
     --colorTituloMain: #252422;
     --colorSubtituloMain: #252422;
 
@@ -84,7 +84,7 @@ main {
     min-width: 320px;
     height: auto;
     text-align: center;
-    /* background-color: var(--colorMain); */
+    
    
 }
 .main--title-container{
