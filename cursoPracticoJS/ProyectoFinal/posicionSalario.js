@@ -38,7 +38,7 @@ function calcularPos(){
     var i=0;
     if (inputSalary.value < salariosSorted[0]){
     var porcentaje = 100;
-    resultPos.innerText = "Tu salario en" +pais.value +" está en el top " + porcentaje + "%.\nEstás en el "+ porcentaje +"% que más gana.";
+    resultPos.innerText = "Tu salario en " +pais.value +" está en el top " + porcentaje + "%.\nEstás en el "+ porcentaje +"% que más gana.";
 
     }else{
 
@@ -60,7 +60,7 @@ function calcularPos(){
     var porcentaje = 100 - ((((q+p)/2)*100)/(salariosSorted.length));
     
 
-    resultPos.innerText = "Tu salario en" +pais.value +" está en el top " + porcentaje + "%.\nEstás en el "+ porcentaje +"% que más gana.";
+    resultPos.innerText = "Tu salario en " +pais.value +" está en el top " + porcentaje + "%.\nEstás en el "+ porcentaje +"% que más gana.";
 
     }
 
