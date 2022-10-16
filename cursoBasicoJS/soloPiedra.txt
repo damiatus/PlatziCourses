@@ -1,0 +1,7 @@
+var piedra = "piedra";
+var jugadas = ["piedra", "papel", "tijera"];
+    } else if ((jugada==piedra && jugadaPC==tijera)||(jugada==papel && jugadaPC==piedra)||(jugada==tijera && jugadaPC==papel)){
+var piedra = "piedra";
+var jugadas = ["piedra", "papel", "tijera"];
+    case piedra:
+            case piedra:
