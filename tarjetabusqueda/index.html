@@ -68,7 +68,7 @@ body {
    }
 
 
-input{
+.search-bar{
    background-color: #d6d6d6;
    width: 70%;
    margin-left: 15%;
@@ -82,19 +82,19 @@ input{
   
 
 }
-button{
+.button{
    
    width: 110px;
    height: 20px;
    border-radius: 40px;
-  background-color: white; 
-  color: black; 
-  border: 1px solid #000000;
-  transition-duration: 0.4s;
+   background-color: white; 
+   color: black; 
+   border: 1px solid #000000;
+   transition-duration: 0.4s;
    cursor: pointer;
    }
 
-button:hover {
+.button:hover {
   background-color: rgb(53, 53, 53);
   color: white;
 }
@@ -129,10 +129,13 @@ p{
       
       <div class="container">
          <img src="https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg?width=528&name=The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg" alt="">
-         <input type="text" placeholder="    Make a search">
 
-         <button>Random</button>
-         <button>Search</button>
+         <input class="search-bar" type="text" value="search" placeholder="    Make a search" name="search-info"><br><br>
+         
+         <input class="button" type=button onClick="location.href='http://www.google.com'"  value='Feel Lucky'>
+        
+         <input class="button" type=button onClick="location.href='http://www.google.com'"  value='Search'>
+
       </div>
    </div>
 
