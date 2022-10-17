@@ -9,16 +9,24 @@
 
 <style>
 
-body {
-   background-color: #ffba08;
+   html{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 15;
+   }
+   
+   body {
+      background-color: #ffba08;
+      font-family:inherit ;
+      font-size: inherit;
+      
 
    
 }
-   .tarjeta {
-      height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.tarjeta {
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    }
    
    
@@ -76,22 +84,28 @@ body {
    margin-bottom: 40px;
    margin-top: 30px;
    border-radius: 40px;
-   height: 23px;
+   height: 27px;
    border: none;
-   border: 1px solid #000000;
+   border: 2px solid #000000;
+   font-family:inherit ;
+   font-size: inherit;
   
 
 }
 .button{
    
    width: 110px;
-   height: 20px;
+   height: 23px;
    border-radius: 40px;
    background-color: white; 
    color: black; 
    border: 1px solid #000000;
    transition-duration: 0.4s;
    cursor: pointer;
+   font-family:inherit;
+   font-size: inherit;
+   font-weight: 400;
+   
    }
 
 .button:hover {
@@ -112,6 +126,7 @@ footer{
    display: flex;
    align-items: flex-end;
    justify-content: center;
+   
 }
 p{
    margin-bottom: 30px;
@@ -122,6 +137,8 @@ p{
    text-decoration: none;
 }
 
+
+
 </style>
 
 <body>
@@ -130,11 +147,11 @@ p{
       <div class="container">
          <img src="https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg?width=528&name=The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg" alt="">
 
-         <input class="search-bar" type="text" value="search" placeholder="    Make a search" name="search-info"><br><br>
+         <input class="search-bar" type="text" value="" placeholder="    Make a search" name="search-info">
          
-         <input class="button" type=button onClick="location.href='http://www.google.com'"  value='Feel Lucky'>
+         <input class="button" id="boton1" type=button onClick="location.href='http://www.google.com'"  value='Feel Lucky'>
         
-         <input class="button" type=button onClick="location.href='http://www.google.com'"  value='Search'>
+         <input class="button" id="boton2" type=button onClick="location.href='http://www.google.com'"  value='Search'>
 
       </div>
    </div>
