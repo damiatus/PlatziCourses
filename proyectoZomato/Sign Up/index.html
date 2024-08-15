@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Sign Up</title>
+</head>
+
+<style>
+   
+
+   :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --black-translucid: rgba(0,0,0,0.5);
+      --black-translucid: rgba(0,0,0,0.5);
+      --dark: #232830;
+      --light-grey: #C4C4C4;
+      --light-grey-translucid: rgba(196, 196, 196, 0.7);
+      --light-yellow: #E5E5E5;
+      --red-zomato: #CB202D;
+      --text-input-field: #F7F7F7;
+      --light-green: #72CB53;
+      --middle-green: #4AB425;
+      --dark-green: #2B7D0F;
+      --sm: 15px;
+      --md: 18px;
+      --lg: 20px;
+
+   }
+   input{
+      font-family: 'Segoe UI';
+      font-style: normal;
+   }
+
+   body {
+      font-family: 'Segoe UI';
+      font-style: normal;
+      margin: 0;      
+      line-height: 24px;
+      letter-spacing: 0em;  
+   }
+
+   .login {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      justify-content: center;
+      align-content: space-between;
+      background: linear-gradient(90deg, #CB202D 0%, #EC0C92 145.41%);
+      font-family: 'Segoe UI';
+      font-style: normal;
+
+   }
+ 
+   .skip-button {
+      position: absolute;
+      top: 25px;
+      right: 18px;
+      height: 30px;
+      width: 65px;
+      border-radius: 230px;
+      background-color: var(--black-translucid);
+      border: none;
+      font-size: var(--sm);
+      font-weight: 400;
+      color: var(--light-yellow);
+      
+   }
+
+   
+   .main-content {
+      display: grid;
+      justify-content: center;
+      align-content: end;
+      margin-bottom: 15px;
+      
+   
+   }
+   .primary-button{
+      height: 59px;
+      width: calc(100vw - 40px);
+      border-width: 0;
+      border-radius: 7px;
+      margin-bottom:15px;
+      padding: 0;
+      font-size: var(--md);
+      
+   }
+   .input-phoneNumber{
+      height: 55px;
+      padding: 0;
+      width: calc(100vw - 44px);
+      border-width: 2px;
+      border-color: var(--light-grey-translucid);
+      background-color: var(--white);
+      font-size: var(--lg);
+      text-align: center;
+      
+
+   }
+   .submit-button{
+      background-color: var(--black);
+      color: var(--white);
+      font-size: var(--lg);
+      
+   }
+   .separator, .agreements, .last2-buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   hr{
+      width: 25%;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      color: var(--light-yellow);
+   }
+   a, p {
+      font-size: var(--sm);
+      color: var(--light-yellow);
+      justify-self: center;
+      
+   }
+   .signin-button{
+      background-color: var(--white);
+   }
+   .last2-buttons{
+      width: calc(100vw - 40px);      
+   }
+   .facebookSignin-button{
+      margin-right: 5px;
+   }
+   .googleSignin-button{
+      margin-left: 5px;
+   }
+   .main-content > p {
+      margin-bottom: 0;
+   }
+   .emailSignin-button{
+      background: url(https://cdn-icons-png.flaticon.com/512/2099/2099199.png) no-repeat;
+      background-position: 20px 50%;
+      background-size: 35px ;
+      background-color: var(--white);  
+   }
+   .facebookSignin-button{
+      background: url(https://cdn-icons-png.flaticon.com/512/2175/2175193.png) no-repeat;
+      background-position:18px 50%;
+      background-size: 28px ;
+      background-color: var(--white);  
+   }
+   .googleSignin-button{
+      background: url(https://cdn-icons-png.flaticon.com/512/281/281764.png) no-repeat;
+      background-position:18px 50%;
+      background-size: 28px ;
+      background-color: var(--white);  
+   }
+
+@media (max-width: 350px){
+   a{
+      font-size: 13px;
+   }
+   .emailSignin-button{
+      background-size: 32px;
+   }
+   .facebookSignin-button, .googleSignin-button{
+      background-size: 25px;
+}
+
+}
+
+
+
+   
+
+</style>
+
+<body>
+   <div class="login">
+      <div class="skip-container">
+
+         <input type="button" value="Skip" class="skip-button">
+      </div>
+
+      <div class="main-content">
+
+         <input type="phoneNumber" class="input input-phoneNumber primary-button" id="phoneNumber" placeholder="  +56 999999999">
+         <input type="submit" value="Send OTP" class="primary-button submit-button">
+
+         <div class="separator">
+            <hr class="line"></hr>
+            <p>OR</p>
+            <hr class="line"></hr>
+         </div>
+
+         <input type="button" value="Continue with Email" class="primary-button emailSignin-button signin-button">
+
+         <div class="last2-buttons">
+
+            <input type="button" value="       Facebook" class="primary-button facebookSignin-button signin-button">
+            <input type="button" value="   Google" class="primary-button googleSignin-button signin-button">
+
+         </div>
+         
+         <p>By continuing, you agree to our</p>
+         <div class="agreements">
+            <a href="/">Terms of Service</a>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Content Policy</a>
+         
+
+         </div>
+
+
+      </div>
+
+
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+</head>
+
+<style>
+   
+   :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --black-translucid: rgba(0,0,0,0.5);
+      --black-translucid: rgba(0,0,0,0.5);
+      --dark: #232830;
+      --light-grey: #C4C4C4;
+      --light-grey-translucid: rgba(196, 196, 196, 0.7);
+      --light-yellow: #E5E5E5;
+      --red-zomato: #CB202D;
+      --text-input-field: #F7F7F7;
+      --light-green: #72CB53;
+      --middle-green: #4AB425;
+      --dark-green: #2B7D0F;
+      --xsm: 12px;
+      --sm: 15px;
+      --md: 17px;
+      --lg: 20px;
+
+   }
+   input{
+      font-family: 'Segoe UI';
+      font-style: normal;
+   }
+
+   body {
+      font-family: 'Segoe UI';
+      font-style: normal;
+      margin: 0 17px 0 17px;      
+      line-height: 24px;
+      letter-spacing: 0em;  
+   }
+   .upperBar{
+      display: grid;
+      align-content: center;
+      row-gap: 34px;
+   }
+   
+   .locationAndMenu {
+      display: flex;
+      justify-content: space-between;
+   }
+   .locationIcon{
+      display: block;
+      margin: 21px 0 10px 0px;
+      height: 21px;
+   }
+   .locatonInput{
+      border-style: none;
+      background: url(https://cdn-icons-png.flaticon.com/512/7615/7615148.png);
+      background-repeat: repeat-x;
+      background-position-x: center;
+      background-position-y: 100%;
+      overflow: visible;
+      background-size: 5%;
+      background-color: var(--white);  
+      width: 278px;
+      margin-right: 5px;
+      
+   }
+   .sandwichMenu{
+      border-style: none;
+      background: url(/Home/src/icons/sandwichMenu.png) no-repeat;
+      background-position: center;
+      overflow: visible;
+      background-size: 100%;
+      background-position-y: 100%;
+      width: 27px;
+      margin:5px 8px 0 25px;
+      background-color: var(--white);
+      
+   }
+   .searchBar {
+      width: 100%;
+      height: 43px;
+      display: grid;
+      justify-self: center;
+      background: url(https://cdn-user-icons.flaticon.com/19309/19309994/1672490409727.svg?token=exp=1672491291~hmac=4a97e57d268fb6575f967056e90d337f) no-repeat;
+      background-size: 17px;
+      background-position: 15px 50%;
+      border-radius: 8px;
+      border: 2px solid var(--light-grey-translucid);
+   }
+   .searchBar::placeholder{
+      text-align: center;
+      color: var(--light-grey-translucid);
+      font-size: var(--md);
+      font-weight: 400;
+   }
+   .searchFilters{
+      display: flex;
+      justify-content: space-between;
+   }
+   .searchFilters > input, .last2buttons > input {
+      border: 1px solid var(--light-grey-translucid);
+      border-radius: 8px;
+      background-color: var(--white);
+      height: 29px;
+      font-size: var(--xsm);
+      padding-bottom: 3px;
+      font-weight: 600;
+   }
+   
+
+
+   #maxSafety{
+      line-height: 11px;
+      padding: 0 15px 0 15px;
+   }
+   
+   .pro{
+      width: 60px;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAAAXNSR0IArs4c6QAAAWRJREFUSEvtl+ExBEEQRt9lIANCIAJEQAhEgAgQASJABIjAXQRkgAyEoN5WT9UYc7d7u/ZUqet/t3vTr/ubnuneCSu0CXAEbK2AORX2DLwDHyMCd4FZgl0C0xFhF/pew4YqPJqMGxHZZxbhQpjHYROwcGp2ClxXXgiyug+L6m6F3QL+qQTuhUOfN04yewG249zmR6kTTD9mcJY5fAtnyrQTZ9TXBqcimpdEL5iLH4Fj4KTIxrO5X4AGw3TwGhKVW1V7PiizZUt/DWsUs6qsrr62lvGfy9i3MOatG63F1IB/A3uIULzZnbJ+2zxzMu4dePxhMzwAbuY0xb4B2CX03fgVlkyo2jrj2Rjv+hKiO1zFeltTo1gOS769qs6jpSwrrWNBysaAv40ONVgJtUG6sG0/HRe8T+1v1SAXwVLHbZPWbFTCIUeIXb1qbbC2/UzZPMV+5+PbD2BXWE1aM3KSsgA6fSd8Aewkh9F2s3xpAAAAAElFTkSuQmCC) no-repeat;
+      background-position: 8px 50%;
+      background-size: 14px;
+      padding-left: 25px;
+   }
+
+   .cousines{
+      width: 80px;
+      background: url(https://cdn-icons-png.flaticon.com/512/58/58979.png) no-repeat;
+      background-position: 87% 55%;
+      background-size: 7px;
+      padding-right: 20px;
+   }
+
+   .rating{
+      padding-left: 10px;
+      padding-right: 23px;
+   }
+
+   .popular{
+      position: relative;
+      right: 20px;
+      padding: 0 18px 0 23px;
+      background: url(https://cdn-icons-png.flaticon.com/512/5436/5436326.png) no-repeat;
+      background-size: 10px;
+      background-position: 8px 50%;
+   }
+
+
+   .discounts{
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+   }
+   .discounts > img {
+      width: 180px;
+   }
+   
+ 
+   .chooseFoodTitle {
+      margin-top: 46px;
+      margin-bottom: 20px;
+      font-size: var(--lg);
+      font-weight: 600;
+   }
+   .foodTypes{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   .foodType{
+      width: 87px;
+      text-align: center;
+      font-size: var(--xsm);
+      cursor: pointer;
+
+   }
+   .foodType > img{
+      height: 80px;
+      border-radius: 50%;
+   }
+   .foodType > p{
+      margin: 0;
+   }
+
+   .seeMoreButton {
+      font-size: 9px;
+      width: 100%;
+      height: 26px;
+      display: grid;
+      justify-self: center;
+      background: url(https://cdn-icons-png.flaticon.com/512/2985/2985150.png) no-repeat;
+      background-size: 10px;
+      background-position: calc(50% + 26px) 53%;
+      border-radius: 8px;
+      border: 1px solid var(--light-grey-translucid);
+      margin-top: 27px;
+      cursor: pointer;
+   }
+   .seeMoreButton::placeholder{
+      text-align: center;
+      color: var(--light-grey-translucid);
+      font-weight: 400;
+   }
+
+   .restaurantsArountTitle{
+      font-size: var(--lg);
+      font-weight: 600;
+      margin-top: 17px;
+   }
+
+   .restaurantInfo{
+      display: grid;
+      width: 385px;
+      background-color: var(--light-grey-translucid);
+      border-bottom-left-radius:8px ;
+      border-bottom-right-radius:8px ;
+   }
+
+   .restaurant > img{
+      width: 385px;
+      border-top-left-radius:8px ;
+      border-top-right-radius:8px ;
+   }
+
+
+   
+   
+   
+   @media (max-width: 413px){
+      .searchFilters > input, .last2buttons > input {
+      height: 29px;
+      font-size: var(--xsm);
+      padding-bottom: 3px;
+      font-weight: 600;
+   }
+}
+ 
+
+</style>
+
+
+<body>
+   <div class="home">
+
+      <section class="upperBar">
+         <div class="locationAndMenu">
+            <img class="locationIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAArCAYAAAAZvYo3AAAAAXNSR0IArs4c6QAAA9FJREFUWEe1mI1tFDEQhccREhDgtKmAUAFQAUkFJBUAFRAqgKuAUEFCBUAFhAoSKuCoIHtJEBKCGH2L3+Hd9a59XLC0utPdeObNmx/P2tnya8vMHpsZn5tmVgUVtZmdhOeDmR2VqHYlQkHmpZntRQZzW2dmNjWzwzHBEgAPzOxd8BZdeCkP+Y7nLNjgeWpmjyJ5mHhmZgDqrRyAJ5EHKEBREbUBCKwBir27AXwLxBiA52a2H6TfmNmryNsc/fof46/NbCfs3e6CGAIA7cdBC3HE+CoLR3CIcD2Mw5ECAOqPgbqrMC7g5BFMEEKYaFYKAJSR7cTt3ipud/ZSrl9CFZFLTXV0AeA9QiyMJzN3BVBUyEHIA0LRAyABygy6/sc6DSwQhqMuA8SeDkfJvP8f1kNCU55U1l4XgA9GN3Ild1pVmze8P/B/AJv3/vDH2tp0o65zYUMeR5sciwGo9OhuTXyGFsave69KicVO1ufz0b2BfsLQpEAMQMhaZZICcTGZ7K05R7X01i/ntu/Uda5bkuhN644BKAEpD8pkcH2bTA6dc7Tp3vLeT2+dneUaVxIAWU+zyFbAxWSyv+Ycna23fl5e7k7Oz3MJrErYiBlQD6BdkoSD63tVbV56f+z+zgKSna3P57nm1bLTrQJR09ToGIizqtq55j15gELWzDm3fTNfBa1e0wVA7BY1OgZA/51X1ZYzq2/XNdVTstRrmnbcBaBSJAxQqWGjRHGJjPQvzpnUYSSEV3kSChznACFYVFoKgPrBVbOQPOiGBhKxwCDxooTbAhkGHELQYnYIQIw2WxEFxpX5xB59i/NibCbUGJVtzRkA8YS1GES0ZwwAEwy0oYAwaEAtcLglosRLOpIby+OEbA2ThShEPeLJCSsHgI0KRfaY7oAqGm5LAMShWKYqklNwl7kSAOxRKPheUhW0c9p6L+v/FQD7GNU5fHJK45eaXtavAoC9alBD+VAU9xhEaQi0J5cP6nbFCbssAIBAMUwAJu4PxXFfhQHtVT4oKbkP0BxIvyidDZLvhjFAvGzm/sSLioYXTk1d06Q6JmB1ddObL7ohQBHDKR7pDgjjQy+qnOuajofmB73soEdA3mrkiwEw5eKVvGGDLp4+hzLsVhGy5MOnkf81N4pJ6WhuTQQgPn45NBjNGa1zr1ko0xVMyfEACJIYZ9lXC0B86GB4QVGJ1iVkYAwAhI2DqpWEOnSkT/TDwtfABt/5PX66SYsRHt0h8nk3GMZ4vKapqZisvR82LOFcsaiu+UjgWW4gATEPHgFK3sWfseUuOzF7GBaDiz2/AdJzEydJ16f8AAAAAElFTkSuQmCC" alt="location icon" >
+            <input type="text" class="locatonInput" >
+            <input type="button" class="sandwichMenu" id="">
+         </div>
+      
+         <input type="text" class="searchBar" placeholder="Restaurant name, cuisine, or a dish..." id="">
+            
+         <div class="searchFilters">
+            <input type="button" class="maxSafety" id="maxSafety" value="MAX
+Safety" id="">
+            <input type="button" class="pro" value="PRO" id="">
+            <input type="button" class="cousines" value="Cuisines" id="">
+            <div class="last2buttons">
+
+               <input type="button" class="rating" value="Rating">
+               <input type="button" class="popular" value="Popular" id="">
+            </div>
+         </div>
+      
+      </section>
+
+      <div class="discounts">
+         <img src="/Home/src/adds/add1.png">
+         <img src="/Home/src/adds/add2.png">
+      </div>
+
+      <section class="chooseFoodType" id="chooseFoodType">
+         <p class="chooseFoodTitle">Eat what makes you happy</p>
+         <div class="foodTypes">
+
+            <div id="Healthy" class="foodType">
+               <img src="./src/foodTypes/healthy.png" alt="Healthy">
+               <p>Healthy</p>
+            </div>
+
+            <div id="Biryani" class="foodType">
+               <img src="./src/foodTypes/biryani.png" alt="Biryani">
+               <p>Biryani</p>
+            </div>
+
+            <div id="Pizza" class="foodType">
+               <img src="./src/foodTypes/pizza.png" alt="Pizza">
+               <p>Pizza</p>
+            </div>
+
+            <div id="Haleem" class="foodType">
+               <img src="./src/foodTypes/Haleem.png" alt="Haleem">
+               <p>Haleem</p>
+            </div>
+
+            <div id="Chicken" class="foodType">
+               <img src="./src/foodTypes/chicken.png" alt="Chicken">
+               <p>Chicken</p>
+            </div>
+
+            <div  id="cake" class="foodType">
+               <img src="./src/foodTypes/cacke.png" alt="Cake">
+               <p>Cake</p>
+            </div>
+
+            <div id="Burger" class="foodType">
+               <img src="./src/foodTypes/burger.png" alt="Burger">
+               <p>Burger</p>
+            </div>
+
+            <div id="Shawarma" class="foodType">
+               <img src="./src/foodTypes/shawarma.png" alt="Shawarma">
+               <p>Shawarma</p>
+            </div>
+
+         </div>
+         <input type="button" value="See more" class="seeMoreButton">
+      </section>
+
+      <section class="restaurantsAround">
+         <p class="restaurantsArountTitle">396 restaurants around you</p>
+         <div class="restaurants">
+
+            <div name="Eat Healthy" class="restaurant">
+               <img src="./src/dishes/food1.png" alt="dish">
+               <div class="restaurantInfo">
+                  <div class="midInfo">
+                     <div class="name&foodType">
+                        <p class="restaurantName">Eat Healthy</p>
+                        <p class="foodTypeOffer">Healthy food</p>
+                     </div>
+                     
+                     <div class="score&price">
+                        <div class="score">
+                           <p>4.3</p>
+                           <img src="./src/icons/star.png" alt="estrella">
+                        </div>
+                        <p>300 for one</p>
+                     </div>
+                  </div>
+                  
+                  <div class="bottomInfo">
+                        
+                     <div class="enviromentInfo">
+                        <img src="./src/icons/greenLeaf.png" alt="Green Leaf">
+                        <p>Zomato funds enviromental projects to offset delivery carbon footprint</p>
+                     </div>
+
+                     <div>
+                        <img src="./src/icons/upArrow.png" alt="Grow Icon">
+                        <img src="" alt="Safety Delivery">
+                     </div>  
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </section>
+      
+      <section class="bottomMenu">
+         <img src="" alt="Bag Icon">
+         <img src="" alt="Foot Print Icon">
+         <img src="" alt="Best Scored Icon">
+         <img src="" alt="Heart Icon">
+         
+      </section>
+   
+   </div>
+   
+</body>
+</html>

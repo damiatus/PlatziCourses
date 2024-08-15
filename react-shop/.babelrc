@@ -1,0 +1,7 @@
+//recordemos que babel hace compatible todas las verisones de js
+{
+   "presets":[ //se agregan estos rpesents para indicarle a babel que los pueda reconocer
+      "@babel/preset-env",
+      "@babel/preset-react"
+   ]
+}
